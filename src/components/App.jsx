@@ -4,6 +4,26 @@ import emojipedia from "../emojipedia";
 
 // console.log(emojipedia);
 
+// {
+//   id: 1,
+//   emoji: "💪",
+//   name: "Tense Biceps",
+//   meaning:
+//     "“You can do that!” or “I feel strong!” Arm with tense biceps. Also used in connection with doing sports, e.g. at the gym."
+// },
+
+function createEntry(emojiTerm){
+  return (
+    <Entry
+    //addking key prop is neccesary to use map function  
+      key={emojiTerm.id}
+      emoji={emojiTerm.emoji}
+      name={emojiTerm.name}
+      discription={emojiTerm.meaning}
+
+    />
+  );
+}
 
 function App() {
   return (
@@ -12,23 +32,7 @@ function App() {
         <span>emojipedia</span>
       </h1>
 
-      <dl className="dictionary">
-        <Entry 
-          emoji="💪"
-          name="Tense Biceps"
-          description="“You can do that!” or “I feel strong!” Arm with tense biceps. Also used in connection with doing sports, e.g. at the gym."
-        />
-        <Entry 
-          // emoji="💪"
-          // name="Tense Biceps"
-          // description="“You can do that!” or “I feel strong!” Arm with tense biceps. Also used in connection with doing sports, e.g. at the gym."
-        />
-        <Entry 
-          // emoji="💪"
-          // name="Tense Biceps"
-          // description="“You can do that!” or “I feel strong!” Arm with tense biceps. Also used in connection with doing sports, e.g. at the gym."
-          />
-          
+      <dl className="dictionary">{emojipedia.map(createEntry)}
       </dl>
     </div>
   );
