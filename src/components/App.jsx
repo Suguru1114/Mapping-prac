@@ -4,14 +4,7 @@ import emojipedia from "../emojipedia";
 
 // console.log(emojipedia);
 
-// {
-//   id: 1,
-//   emoji: "💪",
-//   name: "Tense Biceps",
-//   meaning:
-//     "“You can do that!” or “I feel strong!” Arm with tense biceps. Also used in connection with doing sports, e.g. at the gym."
-// },
-
+//create Entry function
 function createEntry(emojiTerm){
   return (
     <Entry
@@ -25,6 +18,7 @@ function createEntry(emojiTerm){
   );
 }
 
+//after creating entry function & pass it to map
 function App() {
   return (
     <div>
