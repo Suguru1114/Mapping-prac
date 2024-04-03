@@ -1,5 +1,9 @@
 import React from "react";
 import Entry from "./Entry";
+import emojipedia from "../emojipedia";
+
+// console.log(emojipedia);
+
 
 function App() {
   return (
@@ -13,11 +17,17 @@ function App() {
           emoji="💪"
           name="Tense Biceps"
           description="“You can do that!” or “I feel strong!” Arm with tense biceps. Also used in connection with doing sports, e.g. at the gym."
-
-
         />
-        <Entry />
-        <Entry />
+        <Entry 
+          // emoji="💪"
+          // name="Tense Biceps"
+          // description="“You can do that!” or “I feel strong!” Arm with tense biceps. Also used in connection with doing sports, e.g. at the gym."
+        />
+        <Entry 
+          // emoji="💪"
+          // name="Tense Biceps"
+          // description="“You can do that!” or “I feel strong!” Arm with tense biceps. Also used in connection with doing sports, e.g. at the gym."
+          />
           
       </dl>
     </div>
